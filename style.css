@@ -1,0 +1,180 @@
+/* There are three primary screen views w/iin this app 
+    An app can have as many as you want, it's all based on the screen size you pick/need 
+*/
+
+/* VH and VW  */
+/* Screen Percentages */
+
+/* Rule of thumb: ALWAYS ALWAYS ALWAYS START WITH MOBILE VIEW 
+    Always start small, combine elements, add and shift elements based on that screen size
+*/
+
+
+@media screen and (max-width: 3000px){
+    body{
+        background-color: #39c6f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .selfie{
+        background-image: url('https://facts.net/wp-content/uploads/2023/09/22-facts-about-bubbles-the-powerpuff-girls-1694408222.jpg');
+        height: 200px;
+        width: 300px;
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .name::after{
+        content-visibility:visible ;
+        content: "Bubbles";
+        color: black;
+        font-size: 20pt;
+        border: 3pt dotted yellow;
+    }
+}
+/* ---------------------------------{larger desktop view} */
+
+
+@media screen and (max-width: 1200px){
+    body{
+        background-color: #f687c1;
+    }
+
+    .selfie{
+        background-image: url('https://comicvine.gamespot.com/a/uploads/scale_small/11/111746/5814389-blossom_18.png');
+        height: 350px;
+        width: 200px;
+        background-size: cover;
+        border-radius: 5px;
+    
+    }
+
+    .name::after{
+        content-visibility:visible ;
+        content: "Blossom";
+        color: black;
+        border: 3pt dotted white;
+        padding: 5px;
+    }
+
+    .desc::after{
+        content-visibility: visible;
+        content: "";
+        color: black;
+        border: 1pt solid white;
+    }
+
+}
+/* -------------------------------{Mid IPAD} */
+
+
+
+@media screen and (max-width: 800px){
+    body{
+        background-color: #66ce3c;
+    }
+
+    .selfie{
+        background-image: url('https://mystickermania.com/cdn/stickers/cartoons/ppg-buttercup-food-512x512.png');
+        height: 200px;
+        width: 200px;
+        background-size: cover;        
+    }
+
+    .name::after{
+        content-visibility:visible ;
+        content: "Buttercup";
+        color: black;
+        border: 3pt dotted palevioletred;
+
+    }
+}
+
+.name{
+    margin-top: 50px;
+}
+
+
+
+/* ------------------------{Mobile view} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .navbar{
+        border: solid white;
+        height: 22vh;   
+        width: 50vw;
+        } */
+        /* view height is the metric proportioned by the screen size available 
+            same with view width
+            NO MATTER how big the screen is, it'll still the size it's set to compared to it's current size
+            if the size (or any property) isn't defined, the program will use the previous size's property 
+            (remember: program reads from top down)
+            */
+    
+
+
+
+
+/* .mainPic{
+    border: solid red;
+    width: 120px;
+}*/
+/* the default settings of this .mainPic will stay the same despite the size screen changing since it's not in the media query */
+
+
+/* .ad{
+    border: solid red;
+
+} */
+
+
+/* .mainPic{
+    height: 100%; /* 100% of the container it's in & width will be 100% will snap it into the size of the container it's in 
+    width: 100%;
+
+} */
+
+/* .description{
+    color: blue;
+    padding: 1em;
+    text-align: center;
+} */
+
+
